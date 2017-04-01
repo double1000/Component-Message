@@ -1,0 +1,21 @@
+{
+  "name": "message",
+  "version": "1.0.0",
+  "description": "组件化弹窗开发实例",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "弹窗",
+    "组件",
+    "模块"
+  ],
+  "author": "double1000",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.0",
+    "jqueryui": "^1.11.1",
+    "requirejs": "^2.3.3"
+  }
+}

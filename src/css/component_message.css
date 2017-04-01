@@ -1,0 +1,286 @@
+.message{
+    position: absolute;
+    width: 640px;
+    height: 380px;
+    background: #fff;
+    z-index: 20;
+
+}
+.message .message_header,
+.message .message_footer{
+    height: 40px;
+    line-height: 40px;
+    background:#f1f1f1;
+    font-size: 14px;
+    color: #434142;
+    overflow: hidden;
+}
+.message .message_header{
+    position: relative;
+    padding:0 18px;
+    border-bottom:1px solid #cfcfcf;
+}
+.message .message_contant{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    padding:10px 0;
+    height: calc( 100% - 102px );
+    overflow: hidden;
+}
+.message .scroll{
+    overflow-y: scroll;
+}
+.message .message_footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    border-top:#cfcfcf;
+}
+.message .message_footer button{
+    background: #fafafc;
+    border:1px solid #537171;
+    padding:4px 18px;
+    border-radius: 3px;
+    color: #000200;
+    margin:0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/*按钮显示在右边*/
+.message .message_footer_btnRight{
+    text-align: right;
+}
+.message .message_footer_btnRight button:last-child{
+    margin-right: 18px;
+}
+.message .btn_closeSkin{
+    font-size: 30px;
+    outline: none;
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top:0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*遮罩相关的样式*/
+.message_mask{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#000;
+    opacity: .7;
+    z-index: 10;
+}
+
+/*第二套皮肤*/
+.messageSkin_a .message_footer button{
+    background: #3ebb3d;
+    color: white;
+    border: none;
+    padding:4px 24px;
+}
+.messageSkin_a .message_header{
+    background: #f4f5f9;
+    border-bottom:1px solid #e0e0e0;
+}
+.messageSkin_a .message_footer{
+    background: #f4f5f9;
+    border-top:1px solid #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*动画相关样式*/
+@keyframes fade_mess_in {
+    0%{
+        opacity: 0;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-500%);
+    }
+    50%{
+        opacity: .4;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-30%);
+    }
+    100%{
+        opacity: 1;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}
+@-webkit-keyframes fade_mess_in {
+    0%{
+        opacity: 0;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-500%);
+    }
+    50%{
+        opacity: .8;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-30%);
+    }
+    100%{
+        opacity: 1;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-50%);
+    }
+}
+.fade_mess_in{
+    -webkit-animation: 600ms fade_mess_in forwards;
+    animation: 600ms fade_mess_in forwards;
+}
+
+/*出场动画*/
+@-webkit-keyframes bounceOut {
+    0% {
+        opacity: 1;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+    }
+
+    50% {
+        opacity: .7;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+    }
+    100% {
+        opacity:0;
+        display: none;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+    }
+}
+@keyframes bounceOut {
+    0% {
+        opacity: 1;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%) scale(.7);
+        transform:translate(-50%,-50%) scale(.7);
+    }
+
+    50% {
+        opacity: .7;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%) scale(1.2);
+        transform:translate(-50%,-50%) scale(1.2);
+    }
+    100% {
+        opacity:0;
+        top:50%;
+        left:50%;
+        display: none;
+        -webkit-transform:translate(-50%,-50%) scale(0);
+        transform:translate(-50%,-50%) scale(0);
+    }
+}
+.bounceOut {
+    -webkit-animation:500ms bounceOut forwards;
+    animation:500ms bounceOut forwards;
+}
+
+@keyframes aniopacity {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+
+    }
+}
+@-webkit-keyframes aniopacity {
+    0%{
+        opacity: 1;
+    }
+    100%{
+
+        opacity: 0;
+    }
+}
+.aniopacity{
+    -webkit-animation: ms aniopacity forwards;
+    animation: 500ms aniopacity forwards;
+}

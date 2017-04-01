@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1"/>
+    <style>
+        body,div,h1,p{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            background:#e0e0e0;
+            height: 100%;
+        }
+        .btn{
+            padding:10px 14px;
+        }
+        #container{
+            position: absolute;
+            width: 640px;
+            height: 40px;
+            display: -webkit-flex;
+            text-align: center;
+            display: flex;
+            top:50%;
+            left:50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        #container div{
+            -webkit-flex:1;
+            flex: 1;
+            color: white;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #container div:nth-child(1){
+            background: slateblue;
+        }
+        #container div:nth-child(2){
+            background: dodgerblue;
+        }
+
+        #container div:nth-child(3){
+            background: deepskyblue;
+        }
+        #container div:nth-child(4){
+            background: cornflowerblue;
+        }
+        #container div:hover{
+            box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+        }
+        span{
+            font-size: 40px;
+            display: inline-block;
+            transform: rotate(45deg);
+            background: #888;
+            margin: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/component_message.css" />
+    <link rel="icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERAAAAAAEREREAAAAAAREREQABERERERERAAEREREREREAAAAAEREREQAAAAARERERAAEREREREREAAREREREREQAAAAABERERAAAAAAEREREREREREREREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon">
+</head>
+<body>
+<!--
+skin1 #f4f5f9 背景色 #7f7d82 文字颜色 #44b549 按钮颜色 white按钮文字颜色
+上下边框颜色 #f9f8fd
+
+skin2 #f1f1f1 背景色 #070707 文字颜色 #f7ffff
+按钮背景颜色 #537171 按钮边框颜色
+
+padding:左右18
+-->
+
+<div id="container">
+    <div id="messAlert" class="btn">alert_Mess</div>
+    <div id="messConfirm" class="btn">confirm_Mess</div>
+    <div id="messPrompt" class="btn">prompt_Mess</div>
+    <div id="messCommon" class="btn">common_Mess</div>
+</div>
+
+<!--<div class="message messageSkin_a fade_mess_in" data-target="message">
+    <div class="message_header">
+        温馨提示
+        <button type="button" class="message_close btn_closeSkin">+</button>
+    </div>
+    <div class="message_contant">
+        message_contant
+    </div>
+    <div class="message_footer">
+        <button type="button" class="message_true">确认</button>
+    </div>
+</div>
+<div class="message_mask"></div>-->
+<script src="js/require.js" data-main="js/index"></script>
+</body>
+</html>
